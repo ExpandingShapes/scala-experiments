@@ -1,18 +1,6 @@
 package racecondition
 
 object RaceCondition {
-  class BankAccount(var amount: Int) {
-    override def toString: String = s"На счету $amount"
-  }
-
-  def payWithCard(account: BankAccount, price: Int, details: String) = {
-
-    account.amount -= price
-
-    println(details)
-    println(s"Остаток на счете ${account.amount}")
-  }
-
   def main(args: Array[String]): Unit = {
 
     for (_ <- 1 to 50) {
@@ -28,5 +16,17 @@ object RaceCondition {
 
       if (account.amount != 30) println(s"Остаток на счёте: ${account.amount}")
     }
+  }
+
+  class BankAccount(var amount: Int) {
+    override def toString: String = s"На счету $amount"
+  }
+
+  def payWithCard(account: BankAccount, price: Int, details: String) = {
+
+    account.amount -= price
+
+    println(details)
+    println(s"Остаток на счете ${account.amount}")
   }
 }
