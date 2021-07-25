@@ -7,7 +7,7 @@ object DataPipelines extends App {
   }
 
   val listDb: List[String] = List("data 1", "data 2")
-  var listBatchRun = new BatchRun[List] {
+  val listBatchRun = new BatchRun[List] {
     def transform[A](item: A, db: List[A]): List[A] = db ::: item :: Nil
   }
   val savedList = listBatchRun.write("data 3", listDb)
