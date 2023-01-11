@@ -32,8 +32,8 @@ out/
 *.class
 *.log
 /scala3/project/target/config-classes/$2f8874b2b7c2496a0936.cache
-/project/target/config-classes/$4e943cae4e80d961004e.cache
-/project/target/config-classes/$9ac40e03f0a0739a9188.cache
+project/target/
+project/project
 /scala2/project/target/config-classes/$9db373effa71f45d23d8.cache
 /scala2/project/target/config-classes/$026cb35ec9c0f2e92c0a.cache
 /scala3/project/target/config-classes/$60c26d03fed60a019ee1.cache
